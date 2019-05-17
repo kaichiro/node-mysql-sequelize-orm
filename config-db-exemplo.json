@@ -1,0 +1,8 @@
+{
+    "database": "álias/nome da base de dado",
+    "host": "ip ou nome do host",
+    "port": 3306,
+    "user": "root",
+    "password": "senha do user",
+    "dialect": "mysql"
+}
