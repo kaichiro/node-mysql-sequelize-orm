@@ -18,7 +18,8 @@ app.set('view engine', 'ejs')
 
 app.use('/pessoas', pessoas)
 
-model.sequelize.sync({ force: false }).then(() => {
+const forceReBuiilDB = false;
+model.sequelize.sync({ force: forceReBuiilDB }).then(() => {
     const port = process.env.PORT || 3000
     const webLink = 'http://localhost'
     app.listen(port, () => console.log(`\nApp is run in ${webLink}:${port}\n`))
