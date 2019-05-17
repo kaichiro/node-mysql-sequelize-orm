@@ -18,7 +18,7 @@ router.get('/create', createForm)
 
 router.get('/delete/:id', deleteOne.bind(null, model.models))
 
-router.post('/edit/:id', editProcess.bind(null, model.models))
+router.post('/edit/:id',editProcess.bind(null,model.models))
 router.get('/edit/:id', editForm.bind(null, model.models))
 
 module.exports = router
